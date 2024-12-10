@@ -68,40 +68,40 @@ header {
 .heroi-container {
    position: relative;
    overflow: hidden;
- }
- 
- .heroi {
+}
+
+.heroi {
    display: none;
    grid-template-columns: repeat(2, 2fr);
    background-color: var(--bg-color-description);
    padding: 80px 0;
    transition: opacity 0.5s ease-in-out;
    opacity: 0;
- }
- 
- .heroi.active {
+}
+
+.heroi.active {
    display: grid;
    opacity: 1;
- }
- 
- .dots {
+}
+
+.dots {
    display: flex;
    justify-content: center;
    gap: 10px;
    margin-top: 20px;
- }
- 
- .dot {
+}
+
+.dot {
    width: 10px;
    height: 10px;
    background-color: #ccc;
    border-radius: 50%;
    cursor: pointer;
- }
- 
- .dot.active {
+}
+
+.dot.active {
    background-color: #333;
- }
+}
 
 .descricao {
    width: 400px;
@@ -125,9 +125,9 @@ header {
 }
 
 .links {
-  display: flex;
-  gap: 15px;
-  margin-top: 15px;
+   display: flex;
+   gap: 15px;
+   margin-top: 15px;
 }
 
 .link1 {
@@ -159,4 +159,57 @@ header {
 .link2:hover {
    background-color: transparent;
    color: var(--color-button2);
+}
+
+.compras {
+   width: 1200px;
+   max-width: 1170px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+   /* background-color: #333; */
+}
+
+.descricao_itens h2 {
+   font-size: 30px;
+}
+
+.descricao_itens p {
+   font-size: 16px;
+}
+
+.itens_precos {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.itens_precos div {
+   background-color: var(--bg-color-description);
+   margin: 10px;
+}
+
+.imagem_item {
+   border-radius: 8px;
+   padding: 10px;
+}
+
+.imagem_item img {
+   width: 245px;
+   height: 225px;
+}
+
+.preco_item {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+}
+
+.preco_item a {
+   text-decoration: none;
+   color: var(--color-button2);
+   text-transform: uppercase;
 }
