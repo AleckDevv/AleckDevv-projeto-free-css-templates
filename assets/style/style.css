@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+:root {
+   --color-button1: #F89646;
+   --color-button2: #6BB7BE;
+   --color-h1: #343a40;
+   --bg-color-description: #F9FAFA;
+   --bg-desc-header: #F9FAFA;
+   --bg-form-footer: #191E1F;
+}
+
+header {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 10px 0px;
+}
+
+.logo h1 {
+   text-transform: uppercase;
+   color: var(--color-h1);
+}
+
+.menu ul {
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   list-style: none;
+   text-transform: uppercase;
+}
+
+.menu ul:hover {
+   cursor: pointer;
+}
+
+.pesquisa {
+   display: flex;
+   gap: 25px;
+}
+
+.pesquisa:hover {
+   cursor: pointer;
+}
+
+.botao_login button {
+   width: 100px;
+   text-transform: uppercase;
+   background-color: transparent;
+   border: 0;
+}
+
+.botao_login button:hover {
+   cursor: pointer;
+}
+
+.botao_login i {
+   margin-left: -20px;
+   width: 8px;
+}
+
+.heroi {
+   display: grid;
+   grid-template-columns: repeat(2, 2fr);
+   background-color: var(--bg-color-description);
+   padding: 80px 0px;
+}
+
+.descricao {
+   width: 400px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 0px 15px;
+}
+
+.descricao h2 {
+   font-size: 40px;
+}
+
+.descricao p {
+   margin-left: 23px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   text-align: left;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.link1 {
+   width: 160px;
+   background-color: var(--color-button1);
+   border: 1px solid var(--color-button1);
+   text-decoration: none;
+   color: #fff;
+   text-align: center;
+   padding: 5px 0px;
+   transition: .1s ease-in-out;
+}
+
+.link2 {
+   width: 170px;
+   background-color: var(--color-button2);
+   border: 1px solid var(--color-button2);
+   text-decoration: none;
+   color: #fff;
+   text-align: center;
+   padding: 5px 0px;
+}
+
+.link1:hover {
+   background-color: transparent;
+   color: var(--color-button1);
+}
+
+.link2:hover {
+   background-color: transparent;
+   color: var(--color-button2);
+}
