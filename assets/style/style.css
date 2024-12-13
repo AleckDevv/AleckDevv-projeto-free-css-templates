@@ -170,7 +170,6 @@ header {
    align-items: center;
    justify-content: center;
    margin-top: 20px;
-   /* background-color: #333; */
 }
 
 .descricao_itens h2 {
@@ -212,4 +211,39 @@ header {
    text-decoration: none;
    color: var(--color-button2);
    text-transform: uppercase;
+}
+
+.sobre {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   background-color: var(--bg-color-description);
+   justify-content: center;
+   align-items: center;
+   margin: 0px 100px;
+   padding: 30px;
+   margin-top: 20px;
+}
+
+.imagem_pessoa img {
+   width: 550px;
+   margin-left: 200px;
+}
+
+.sobre_nos {
+   padding: 0px 30px;
+}
+
+.sobre_nos h3 {
+   margin-bottom: 20px;
+   font-size: 30px;
+   text-transform: uppercase;
+}
+
+.sobre_nos a {
+   padding: 5px 20px;
+}
+
+.sobre_nos p {
+   margin-bottom: 20px;
+   border-radius: 5px;
 }

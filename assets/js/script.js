@@ -19,7 +19,7 @@ function startAutoSlide() {
   setInterval(() => {
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
-  }, 2000); // Troca a cada 5 segundos
+  }, 1500); // Troca a cada 5 segundos
 }
 
 // Clique nos dots
